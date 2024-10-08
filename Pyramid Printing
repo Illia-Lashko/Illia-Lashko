@@ -1,0 +1,10 @@
+symbol = input("Enter your symbol: ")
+rng = int(input("Enter the size of pyramid: "))
+
+print("Here is your pyramid:")
+
+for i in range (0,rng,1):
+    print(symbol*i)
+    
+for i in range (rng,0,-1):
+    print(symbol*i) 
