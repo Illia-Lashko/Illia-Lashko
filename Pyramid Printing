@@ -1,10 +1,11 @@
 symbol = input("Enter your symbol: ")
 rng = int(input("Enter the size of pyramid: "))
+multiply = int(input("Enter your size multiplication value of pyramid: "))
 
 print("Here is your pyramid:")
 
 for i in range (0,rng,1):
-    print(symbol*i)
+    print(symbol*i*multiply)
     
 for i in range (rng,0,-1):
-    print(symbol*i) 
+    print(symbol*i*multiply)
