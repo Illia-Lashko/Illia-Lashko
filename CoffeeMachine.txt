@@ -1,0 +1,86 @@
+// Coffee Machine Project
+
+// Value of your Wallet
+let wallet = 50;
+
+// Prices of the drinks
+const coffee = 15;
+const latte = 20;
+const espresso = 25;
+
+// Additional Variables
+let choseOption = 0;
+let amountOfOptions = 3;
+
+// Coffee Machine Information Table
+function machineInfo(){
+    console.log("Coffee Machine Menu:" + '\n'
+    + "1. Coffee - 15$" + '\n' + "2. Latte - 20$" + '\n'
+    + "3. Espresso - 25$" + '\n'+ '\n' 
+    + "Choose between 1 to 3" + '\n');
+}
+// Coffee Machine Working Function
+function machineOption(option){
+    if (option == 1 && wallet >= coffee){
+        console.log("Your choice is 1. Coffee \n");
+        wallet = wallet - coffee;
+        console.log("Current Wallet Balance: " + wallet +'$'+'\n'+
+        "\nMaking your Coffee. Please wait...\n");
+    }
+    else if  (option == 2 && wallet >= latte){
+        console.log("Your choice is 2. Latte \n");
+        wallet = wallet - latte;
+        console.log("Current Wallet Balance: " + wallet +'$'+'\n'+
+        "\nMaking your Latte. Please wait...\n");
+    }
+    else if (option == 3 && wallet >= espresso){
+        console.log("Your choice is 3. Espresso \n");
+        wallet = wallet - espresso;
+        console.log("Current Wallet Balance: " + wallet +'$'+'\n'+
+        "\nMaking your Espresso. Please wait...\n");
+    }
+    else if (option!=1 || option!=2 ||option!=3)  {
+       console.log("Error... You chose wrong option. Please redo your order.")
+       return 0;
+    }
+    else {
+        console.log("You don't have enough money.")
+        return 0;
+    }
+    return choseOption = option;
+}
+// Time Function of Coffee Brewing
+function waitingTime(time=3){
+    if (choseOption > 0 && choseOption<4){
+        let i = 0;
+        while (i < time){
+            i++
+            console.log("\t.\t.\t.\t.\t.")
+        }
+    }
+}
+// Brewed Drink Function
+function brewedDrink(){
+    if (choseOption == 1){
+         console.log("\nYour Coffee is ready. \nHave a nice drink!");
+    }
+    else if  (choseOption == 2){
+         console.log("\nYour Latte is ready. \nHave a nice drink!");
+    }
+    else if (choseOption == 3){
+         console.log("\nYour Espresso is ready. \nHave a nice drink!");
+    }
+}
+
+// Functions Logic
+// Machine Info
+machineInfo()
+
+// Choose your option from 1 to 3
+machineOption(2)
+
+// Simulation of waiting
+waitingTime(3)
+
+// Drink is ready
+brewedDrink()
