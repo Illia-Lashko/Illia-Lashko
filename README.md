@@ -1,6 +1,6 @@
 - 👋 Hi, I’m @Illia-Lashko
 - 👀 I’m interested in coding programs and games
-- 🌱 I’m currently learning Python, C++, Lua and GDScript
+- 🌱 I’m currently learning Python, C++, Java Script, Lua and GDScript
 - 💞️ I’m not looking to collaborate right now
 - 📫 How to reach me: illialashko960@gmail.com
 - 😄 Pronouns: He, him.
