@@ -1,0 +1,13 @@
+Author of the Project: Lashko Illia
+Scripting Language: Java Script
+Notes: This is a Java Script project simulates work of the Coffee Machine. It contains some changeable variables. 
+You can change variables:
+* wallet
+* coffee
+* latte
+* espresso
+And variables in functions:
+* waitingTime(time) -- time of making drinks
+* machineOption(option) -- coffee machine options
+
+Feel free to use and upgrade this project. 
