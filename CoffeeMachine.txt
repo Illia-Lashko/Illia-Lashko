@@ -1,3 +1,6 @@
+// Author: Illia Lashko
+// Notes: Please read "Read Me"
+
 // Coffee Machine Project
 
 // Value of your Wallet
